@@ -1,0 +1,348 @@
+/* header > *
+{
+    display: inline-block;
+    text-decoration:solid;
+    margin-left: 2.5em;
+    padding: 0 7em 2em 0;
+   background-color: aliceblue;
+   font-weight: bold;
+   font-size:x-large;
+} */
+
+#leftbox {
+  float:left; 
+  width:25%;
+  height:280px;
+}
+
+#midbox {
+  float:left; 
+  width:50%;
+  height:280px;
+}
+
+#rightbox{
+  float:right; 
+  width:25%;
+  height:280px;
+}
+
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
+  }
+  
+  .footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity: 0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .footer-dark .item.text {
+    margin-bottom: 36px;
+  }
+  
+@media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom: 0;
+    }
+  }
+  
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+  }
+  
+.footer-dark .item.social {
+    text-align: center;
+  }
+  
+@media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+.footer-dark .item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+  }
+  
+.footer-dark .item.social > a:hover {
+    opacity: 0.9;
+  }
+  
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+
+.modal
+{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100%;
+    z-index:1;
+    background-color: rgba(158, 158, 158,0.7);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+}
+
+.modal-container
+{
+    width:400px;
+    margin: 0 auto;
+    background-color: white;
+    padding:50px 32px;
+    text-align: center;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderImage {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.featuredmovieslist{
+  display:inline-flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-content: left;
+}
+
+.image-container{
+  position:relative;
+  transition: transform 0.2s;
+
+}
+
+.featuredMovieImg{
+  padding:2px;
+  width: 300px;;
+  height:300px;
+}
+
+.movieList{
+  padding:2px;
+  width: 400px;
+  height:400px;
+}
+
+.movielistcontainer{
+  padding-left: 5em;
+  align-content: center;
+}
+
+/*Login Page*/
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 12%;
+  border-radius: 10%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/*Movie Details*/
+.detailscontainer {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin:left; /* Center it */
+}
+
+.detailscontainer .detailscontent {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+.moviedetailimg{
+  width: 100%;
+}
+
+.smallposter{
+  align-content: center;
+  padding-right: 2px;
+}
+
+.smallposterimg{
+  width: 300px;;
+  height:300px;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap; /* assumes you only want one row */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
